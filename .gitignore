@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+debug.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+
+# Configurações do Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache do TypeScript e build (se houver)
+dist/
+build/
+.cache/
+
+# Coverage (se usar testes)
+coverage/
+
+# Arquivos de backup ou temporários
+*.bak
+*.tmp
+~$*
+*.orig
+
+# Dependências do React
+frontend/node_modules/
+frontend/build/
+
+# Dependências do Sequelize
+backend/migrations/
+backend/seeders/
+
+# Outros
+.eslintcache
