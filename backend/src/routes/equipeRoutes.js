@@ -5,15 +5,18 @@ const router = express.Router();
 // Rota para criar uma nova equipe
 router.post('/', async (req, res) => {
   try {
-    const { nome, serie } = req.body;
+    const { nome, serie, estado } = req.body;
      
-    if (!nome || !serie) {
+    if (!nome || !serie || !estado) {
       return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
     }
+    
     const equipe = await Equipe.create({
       nome,
-      serie
+      serie,
+      estado
     });
+
     res.status(201).json(equipe); 
   } catch (error) {
     res.status(500).json({ error: error.message });

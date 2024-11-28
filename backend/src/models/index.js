@@ -6,8 +6,8 @@ const Equipe = require('./Equipe');
 const Torcedor = require('./Torcedor');
 
 // Configurar associações
-Torcedor.belongsTo(Equipe, { foreignKey: 'equipeId' });
-Equipe.hasMany(Torcedor, { foreignKey: 'equipeId' });
+Torcedor.belongsTo(Equipe, { foreignKey: 'equipe_Id' });
+Equipe.hasMany(Torcedor, { foreignKey: 'equipe_Id' });
 
 // Exportar os modelos e a conexão
 module.exports = {

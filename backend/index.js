@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Hello World')
-})
+}) 
 
 // Definindo as rotas
 app.use('/equipes', equipeRoutes);
